@@ -1,4 +1,6 @@
 def my_each(words)
+if blockgiven?
+  
   i = 0
 
   while i < words.length
@@ -6,6 +8,6 @@ def my_each(words)
     yield words[i]
   end
 
-  return words
-
+  words
+end
 end
